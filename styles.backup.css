@@ -1,0 +1,309 @@
+/* VARIABLES BÁSICAS */
+:root {
+  --bg-body: hsl(0, 0%, 95%);
+  --bg-dark: hsl(0, 0%, 7%);
+  --bg-light: hsl(0, 0%, 100%);
+  
+  /* Purple colors */
+  --purple-100: hsl(254, 88%, 90%);
+  --purple-500: hsl(256, 67%, 59%);
+  
+  /* Yellow colors */
+  --yellow-100: hsl(31, 66%, 93%);
+  --yellow-500: hsl(39, 100%, 71%);
+
+  --text-dark: hsl(0, 0%, 7%);
+  --text-light: hsl(0, 0%, 100%);
+  --text-muted: hsl(0, 0%, 40%);
+  
+  --radius-lg: 0.75rem;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  --font-main: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* RESETEO SUAVE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-main);
+  font-size: 18px;
+  line-height: 1.5;
+  background: var(--bg-body);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* GRID BASE */
+.bento-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+/* TARJETAS GENERALES */
+.card {
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  background: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.card-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.card-title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.card-eyebrow {
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.card-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.card-image-stars {
+  max-width: 200px;
+}
+
+.card-rating {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* BOTÓN */
+.btn-primary {
+  margin-top: 1.3rem;
+  align-self: flex-start;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--text-dark);
+  color: var(--text-light);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--purple-500);
+}
+
+/* COLORES POR TARJETA (para que se parezca al diseño) */
+.card-main {
+  background: var(--purple-500);
+  color: var(--text-light);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.card-main .card-title {
+  font-size: 3rem;
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+}
+
+.card-main .highlight {
+  color: var(--yellow-500);
+  font-weight: 400;
+}
+
+.card-main .card-rating {
+  color: var(--text-light);
+}
+
+.card-main .card-title {
+  font-size: 3rem;
+  line-height: 0.95;
+  margin-bottom: 1.5rem;
+}
+
+.card-main .highlight {
+  color: var(--yellow-500);
+  font-weight: 400;
+}
+
+.card-main .card-rating {
+  color: var(--text-light);
+}
+
+.card-create {
+  background: var(--yellow-500);
+  color: var(--text-dark);
+}
+
+.card-create .card-title {
+  font-size: 2rem;
+}
+
+.card-schedule {
+  background: var(--purple-100);
+  color: var(--text-dark);
+}
+
+.card-schedule .card-title {
+  font-size: 1.5rem;
+}
+
+.card-write {
+  background: var(--yellow-100);
+  color: var(--text-dark);
+}
+
+.card-write .card-title {
+  font-size: 2rem;
+}
+
+.card-manage {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.card-manage .card-title {
+  font-size: 1.75rem;
+}
+
+.card-consistent {
+  background: var(--yellow-500);
+  color: var(--text-dark);
+}
+
+.card-consistent .card-title {
+  font-size: 1.5rem;
+}
+
+.card-growth {
+  background: var(--bg-light);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-growth .card-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.card-growth .card-text {
+  font-size: 1.125rem;
+}
+
+.card-followers {
+  background: var(--purple-500);
+  color: var(--text-light);
+}
+
+.card-followers .card-title {
+  font-size: 2rem;
+  color: var(--text-light);
+}
+
+/* Ejemplo mini gráfico */
+.schedule-chart {
+  margin-top: 1rem;
+}
+
+.schedule-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.schedule-bars {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* FOOTER */
+.attribution {
+  margin-top: 3rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.attribution a {
+  color: var(--purple-500);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* ----- LAYOUT DESKTOP (BENTO) ----- */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .card-main {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .card-schedule {
+    grid-column: span 2;
+  }
+
+  .card-followers {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+
+  .card-create {
+    grid-row: span 2;
+  }
+
+  .card-write,
+  .card-manage,
+  .card-consistent,
+  .card-growth {
+    grid-column: span 1;
+  }
+}
