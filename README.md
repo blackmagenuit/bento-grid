@@ -138,8 +138,8 @@ Empezar con una sola columna y expandir a grid complejo:
 
 ## 🔗 Links
 
-- **Repositorio**: [GitHub](https://github.com/blackmagenuit/bento-grid-main)
-- **Demo en vivo**: [GitHub Pages](https://blackmagenuit.github.io/bento-grid-main)
+- **Repositorio**: [GitHub](https://github.com/blackmagenuit/bento-grid)
+- **Demo en vivo**: [GitHub Pages](https://blackmagenuit.github.io/bento-grid)
 - **Perfil Frontend Mentor**: [@blackmagenuit](https://www.frontendmentor.io/profile/blackmagenuit)
 
 ## 👨‍💻 Autor
