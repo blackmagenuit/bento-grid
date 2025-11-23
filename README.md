@@ -9,7 +9,6 @@ Una solución moderna y responsive del [desafío Bento Grid de Frontend Mentor](
 - [Sobre el proyecto](#-sobre-el-proyecto)
 - [Características](#-características)
 - [Tecnologías](#-tecnologías)
-- [Vista previa](#-vista-previa)
 - [Instalación](#-instalación)
 - [Lo que aprendí](#-lo-que-aprendí)
 - [Desafíos superados](#-desafíos-superados)
@@ -40,14 +39,6 @@ Este proyecto es un dashboard interactivo que muestra las capacidades de una pla
 - **CSS3** - Grid, Flexbox, Custom Properties
 - **Google Fonts** - DM Sans (400, 500, 700)
 - **Mobile-First** - Diseño responsive desde móvil
-
-## 🖼 Vista previa
-
-### Desktop
-![Desktop View](./design/desktop-design.jpg)
-
-### Mobile
-![Mobile View](./design/mobile-design.jpg)
 
 ## 📦 Instalación
 
