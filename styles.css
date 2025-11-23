@@ -184,33 +184,44 @@ body {
 .card-write {
   background-color: var(--yellow-100);
   color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-write .card-title {
-  font-size: 1.75rem;
-  margin-block-end: 1.5rem;
+  font-size: clamp(1.5rem, 1.25rem + 1vw, 1.75rem);
+  margin-block-end: 1rem;
+  line-height: 1.2;
 }
 
 .card-write .card-image {
   margin-top: auto;
-  max-width: 250px;
+  max-width: 100%;
+  align-self: center;
 }
 
 /* 5. Multiple Platforms Card - White */
 .card-manage {
   background-color: var(--white);
   color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  gap: 1rem;
 }
 
 .card-manage .card-image {
-  max-width: 200px;
-  margin: 0 auto 1rem;
+  max-width: 180px;
+  margin: 0;
 }
 
 .card-manage .card-title {
-  font-size: clamp(1.25rem, 1.125rem + 1vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.125rem + 0.5vw, 1.5rem);
   line-height: 1.2;
+  margin: 0;
 }
 
 /* 6. Consistent Schedule Card - Yellow */
@@ -225,7 +236,7 @@ body {
 }
 
 .card-consistent .card-title {
-  font-size: clamp(1.25rem, 1.125rem + 1vw, 1.5rem);
+  font-size: clamp(1.25rem, 1.125rem + 0.5vw, 1.5rem);
   margin-block-end: 1rem;
   line-height: 1.2;
   flex-shrink: 0;
@@ -233,10 +244,13 @@ body {
 
 .card-consistent .card-image {
   margin-top: auto;
-  max-width: 90%;
+  max-width: 100%;
+  width: 100%;
   align-self: center;
   height: auto;
   display: block;
+  object-fit: cover;
+  object-position: top;
 }
 
 /* 7. Growth Stat Card - White */
@@ -280,17 +294,23 @@ body {
   background-color: var(--purple-500);
   color: var(--white);
   padding: clamp(1.5rem, 1rem + 2vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  gap: 1rem;
 }
 
 .card-followers .card-image {
-  max-width: 200px;
-  margin: 0 auto 1rem;
+  max-width: 180px;
+  margin: 0;
 }
 
 .card-followers .card-title {
-  font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  font-size: clamp(1.35rem, 1.25rem + 0.5vw, 1.75rem);
   line-height: 1.1;
+  margin: 0;
 }
 
 /* FOOTER */
